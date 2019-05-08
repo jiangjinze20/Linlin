@@ -39,7 +39,7 @@ https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
     * Dom 无法获得
     * Ajax 请求不能发送  
 4. 如何设置同源策略（domain)
-5. 怎么突破同源策略
+5. 怎么突破同源策略 https://www.jianshu.com/p/639098c68096
 
 ### 1.同源(origin)策略
 
@@ -104,6 +104,20 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
       }
 ```
 
+##### 降域 --主子域cookoe共享
+
+        对于主域相同子域不同（http://www.a.com/ ，http://child.a.com）的情况。
+        在双方域名下 html 文件(index1.html，index2.html) 中都添加一句document.domain = a.com；
+        将域名都设置成a.com然后在index1.html中创建一个iframe，然后index1.html的JS就能够读取index2.html的数据了；
+        虽然域名可以向上/下改，但是改完了之后又想改回去就不行；
+        降域的缺点：只对相同的后缀起作用，也就是主域相同的不同子域；只针对iframe形式的跨域；
+
+##### iframe
+
+        HTML5 postMessage:
+        当要多窗口之间消息传递时，html5引入的message的API可以更方便、有效、安全的解决这些难题。
+            postMessage()方法允许来自不同源的脚本采用异步方式进行有限的通信，可以实现跨文本档、多窗口、跨域消息传递。
+
 ##### css实现跨域
 
     1.图片canvas压缩代码
@@ -111,7 +125,21 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
     
     跨域资源共享 CORS 详解
 
+##### CORS(Cross-Origin Resource Sharing)
+
+    简单概括一下：b.com声明允许a.com来访问我，然后a.com的Js可以正式的发起对b.com的AJAX
+    CORS与JSONP的使用目的相同，但是比JSONP更强大；JSONP只支持GET请求，CORS支持所有类型的HTTP请求。
+    JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。
+    
 http://www.ruanyifeng.com/blog/2016/04/cors.html  跨域资源共享 CORS 详解
+
+##### window.name:
+
+        利用window.name只随tab的关系，不随域名跳转的改变而改变。
+        那么就利用a.com中的iframe向b.com中跳转的同时，传入一个参数，b.com中的函数接收这个参数。
+        在b.com自己域名下获取数据之后，将数据放在window.name上，再跳转回a.com域名下。
+        此时再去获取处理window.name里面的数据，就达到了效果
+
 
 
 ##### 为什么jsonp只支持get  --src
