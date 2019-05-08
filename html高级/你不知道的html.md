@@ -6,19 +6,27 @@
     推荐 Sublime Text （最主要的优点：轻量、性能高）   
     插件推荐：
     Emmet
-    概括地说，Emmet（译者注：前身就是以前大名鼎鼎的Zen Coding，这个如果你没听说和使用过，就悲哀了）是一个可以让你更快更高效地编写HTML和CSS，节省你大量时间的插件。怎么使用？你只需按约定的缩写形式书写而不用写整个代码，然后按“扩展”键，这些缩写就会自动扩展为对应的代码内容。
-    Material Theme
-    主题插件，界面看起来清爽优化。
-    Comic Sans MS
+    概括地说，Emmet（译者注：前身就是以前大名鼎鼎的Zen Coding，这个如果你没听说和使用过，就悲哀了）,
+    一个可以让你更快更高效地编写HTML和CSS，节省你大量时间的插件。怎么使用？
+    你只需按约定的缩写形式书写而不用写整个代码，然后按“扩展”键，这些缩写就会自动扩展为对应的代码内容。
+    主题插件，界面看起来清爽优化。   Material Theme   Comic Sans MS
     这个是英文字体，一个看起来舒服的英文字体，能够让开发在写代码时，心情更加愉悦。比如说，后面这段调皮的代码：console.info("Hello World");
-    https://material-ui.com/ 谷歌UI交互设计风格material   
-    https://github.com/equinusocio/material-theme  material github地址
-    https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
-    https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
-    https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
+    
     备注：统一编辑器的好处
       1)作为团队开发，统一的编辑器可以尽量减少团队的沟通的成本。
       2)好的编辑器能够提高团队的开发效率，无论从写代码的角度，还是审美的角度。
+      
+https://material-ui.com/ 谷歌UI交互设计风格material  
+
+https://github.com/equinusocio/material-theme  material github地址
+
+https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
+
+https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
+
+https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
+
+ 
       
 ## 二.前端跨域请求解决方案
 
@@ -36,15 +44,16 @@
 
 ### 1.同源(origin)策略
 
-    同源策略是浏览器的一个安全功能，不同源的客户端脚本在没有明确授权的情况下，不能读写对方资源。所以a.com下的js脚本采用ajax读取b.com里面的文件数据是会报错的。
-
-    不受同源策略限制的：
-    1. 页面中的链接，重定向以及表单提交是不会受到同源策略限制的。
-    2. 跨域资源的引入是可以的。但是js不能读写加载的内容。如嵌入到页面中的`<script src="..."></script>，<img>，<link>，<iframe>`等。
+    同源策略是浏览器的一个安全功能，不同源的客户端脚本在没有明确授权的情况下，不能读写对方资源。
+    所以a.com下的js脚本采用ajax读取b.com里面的文件数据是会报错的。
+            不受同源策略限制的：
+            1. 页面中的链接，重定向以及表单提交是不会受到同源策略限制的。
+            2. 跨域资源的引入是可以的。但是js不能读写加载的内容。如嵌入到页面中的`<script src="..."></script>，<img>，<link>，<iframe>`等。
 
 ### 2.跨域
 
 1、什么是跨域
+
 受前面所讲的浏览器同源策略的影响，不是同源的脚本不能操作其他源下面的对象。想要操作另一个源下的对象是就需要跨域。
 
 2、跨域的实现形式
@@ -60,11 +69,11 @@
 
 #### 自己的理解
 
-      `同源策略`：http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
-      同源策略是1995年 Netscape 公司引入浏览器的，目前浏览器都是实行这个策略，
-      同源策略是为了保证用户信息的安全，防止恶意的网站窃取数据的。
-      同源指的是三个相同：协议相同、域名相同、端口号相同
-      但是也是因为浏览器同源策略的原因，前端页面不能跨域请求所需资源
+` 同源策略 `：http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
+同源策略是1995年 Netscape 公司引入浏览器的，目前浏览器都是实行这个策略，
+同源策略是为了保证用户信息的安全，防止恶意的网站窃取数据的。
+同源指的是三个相同：协议相同、域名相同、端口号相同
+但是也是因为浏览器同源策略的原因，前端页面不能跨域请求所需资源
 但是在日常的WEB开发中，需要进行跨域请求:
 *** 
 ##### JSONP
