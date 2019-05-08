@@ -103,7 +103,7 @@ html标签
 ```
 #### 自己的理解
 
-同源策略：
+同源策略：http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
     同源策略是1995年 Netscape 公司引入浏览器的，目前浏览器都是实行这个策略，
     同源策略是为了保证用户信息的安全，防止恶意的网站窃取数据的。
     同源指的是三个相同：协议相同、域名相同、端口号相同
@@ -117,7 +117,6 @@ html标签
 ##### image实现跨域
     //测试一下手机网速webapp页面 根据这个网速 可以给用户出一些网速比较慢的解决方案
     //直接跳过简版 图片压缩 视屏 s.gid = 1kb
-    
 ``` javascript
       var s = new Image();
       var start = Date.now();
