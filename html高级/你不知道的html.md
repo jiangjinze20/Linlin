@@ -110,7 +110,7 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
     
     跨域资源共享 CORS 详解
 
-http://www.ruanyifeng.com/blog/2016/04/cors.html
+http://www.ruanyifeng.com/blog/2016/04/cors.html  跨域资源共享 CORS 详解
 
 
 ##### 为什么jsonp只支持get  --src
