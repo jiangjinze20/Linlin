@@ -32,12 +32,12 @@ https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
 
 ## 2.前端跨域请求解决方案
 
-1. 什么是同源
+1. 什么是同源 协议\端口\域名
 2. 浏览器不同的域名不能访问对应的cookie但是内部的表单没有限制
 3. 同源策略限制的对象（跨域）
-  * Cookie 、 LocalStorage 、 IndexDB无法读取
-  * Dom 无法获得
-  * Ajax 请求不能发送
+    * Cookie 、 LocalStorage 、 IndexDB无法读取
+    * Dom 无法获得
+    * Ajax 请求不能发送  
 4. 如何设置同源策略（hosts） domain
 5. 怎么突破同源策略
 
