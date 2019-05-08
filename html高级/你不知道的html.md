@@ -2,15 +2,9 @@
 ======
 文件夹小写
 ## 1．开发工具 
-https://github.com/equinusocio/material-theme
 
-https://material-ui.com/
 
-https://chinagdg.org/2016/02/ttt2-seti-ui/
-
-https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
-推荐 Sublime Text （最主要的优点：轻量、性能高）
-
+推荐 Sublime Text （最主要的优点：轻量、性能高）   
 插件推荐：
 Emmet
 概括地说，Emmet（译者注：前身就是以前大名鼎鼎的Zen Coding，这个如果你没听说和使用过，就悲哀了）是一个可以让你更快更高效地编写HTML和CSS，节省你大量时间的插件。怎么使用？你只需按约定的缩写形式书写而不用写整个代码，然后按“扩展”键，这些缩写就会自动扩展为对应的代码内容。
@@ -21,6 +15,13 @@ Material Theme
 Comic Sans MS
 这个是英文字体，一个看起来舒服的英文字体，能够让开发在写代码时，心情更加愉悦。比如说，后面这段调皮的代码：
   console.info("Hello World");
+
+https://material-ui.com/ 谷歌UI交互设计风格material   
+https://github.com/equinusocio/material-theme  material github地址
+
+https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
+
+https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
 
 备注：统一编辑器的好处
 
