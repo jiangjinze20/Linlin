@@ -95,11 +95,12 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
 ``` javascript
       var s = new Image();
       var start = Date.now();
-      s.src = 'http://www.baidu.com/s,gif';
+      s.src = 'http://www.baidu.com/s,gif'; 1
       s.onload = function(argument){
          var end = Date.now();
          t = end-start;
-         v = 
+         v =  1 / t = 'kb/s'
+         ---根据网速做事情!
       }
 ```
 
