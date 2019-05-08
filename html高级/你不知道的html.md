@@ -1,8 +1,14 @@
 你不知道的HTML
 ======
-
+文件夹小写
 ## 1．开发工具 
+https://github.com/equinusocio/material-theme
 
+https://material-ui.com/
+
+https://chinagdg.org/2016/02/ttt2-seti-ui/
+
+https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
 推荐 Sublime Text （最主要的优点：轻量、性能高）
 
 插件推荐：
