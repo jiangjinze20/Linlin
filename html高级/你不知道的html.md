@@ -118,9 +118,7 @@ html标签
     //测试一下手机网速webapp页面 根据这个网速 可以给用户出一些网速比较慢的解决方案
     //直接跳过简版 图片压缩 视屏 s.gid = 1kb
     
-    
-    
-``` html
+``` javascript
       var s = new Image();
       var start = Date.now();
       s.src = 'http://www.baidu.com/s,gif';
@@ -130,6 +128,21 @@ html标签
          v = 
       }
 ```
+
+##### 为什么jsonp只支持get  --src
+
+    JSONP的原理
+    JSONP 是一种【请求一段 JS 脚本，把执行这段脚本的结果当做数据】的玩法。所以，你能 POST 一段通过 script 标签引入的脚本吗？
+    （如果看过 JSONP 库的源码就知道，常见的实现代码其实就是 document.createElement(‘script’) 生成一个 script 标签，然后插 body 里而已。在这里根本没有设置请求格式的余地）。
+    所以JSONP的实现原理就是创建一个script标签, 再把需要请求的api地址放到src里. 这个请求只能用GET方法, 不可能是POST
+    
+    1.拼接一个script标签，，从而触发对指定地址的GET请求 
+    2.那服务器端对这个GET请求进行处理，并返回字符串 “myCallback(‘response value’)” 
+    3.那前端script加载完之后，其实就是在script中执行myCallback(‘response value’) 
+    4.是不是就完成了跨域的请求， 
+    5.是不是就是只能用GET
+    所以jsonp不会对服务器端代码或者内容做更改，因为它只能发送get请求
+
 ## html语义化
 
 ### 1、什么是HTML语义化？
