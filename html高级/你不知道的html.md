@@ -23,17 +23,22 @@ https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
 
 https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
 
+https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
+
 备注：统一编辑器的好处
 
   1)作为团队开发，统一的编辑器可以尽量减少团队的沟通的成本。
   2)好的编辑器能够提高团队的开发效率，无论从写代码的角度，还是审美的角度。
 
-## 前端跨域请求解决方案
+## 2.前端跨域请求解决方案
 
 1. 什么是同源
 2. 浏览器不同的域名不能访问对应的cookie但是内部的表单没有限制
 3. 同源策略限制的对象（跨域）
-4. 如何设置同源策略（hosts）
+  * Cookie 、 LocalStorage 、 IndexDB无法读取
+  * Dom 无法获得
+  * Ajax 请求不能发送
+4. 如何设置同源策略（hosts） domain
 5. 怎么突破同源策略
 
 ### 同源策略
