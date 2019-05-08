@@ -25,7 +25,7 @@ https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
 
 https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
       
-## 二.前端跨域请求解决方案
+## 二. 前端跨域请求解决方案
 
 1. 什么是同源
     * 协议
@@ -78,7 +78,7 @@ https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
     
 http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
 
-##### JSONP
+##### JSONP实现跨域
 
     JSONP是服务器与客户端跨源通信的常用方法。
     最大特点就是简单适用，老式浏览器全部支持，服务器改造非常小。   
@@ -101,6 +101,16 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
       }
 ```
 
+##### css实现跨域
+
+    1.图片canvas压缩代码
+    2.css background执行javascript代码
+    
+    跨域资源共享 CORS 详解
+
+http://www.ruanyifeng.com/blog/2016/04/cors.html
+
+
 ##### 为什么jsonp只支持get  --src
 
     JSONP的原理
@@ -116,7 +126,7 @@ http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
     5.是不是就是只能用GET
     所以jsonp不会对服务器端代码或者内容做更改，因为它只能发送get请求
 
-## 三.HTML语义化
+## 三. HTML语义化
 
 ### 1、什么是HTML语义化？
 
