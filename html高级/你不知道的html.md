@@ -1,98 +1,53 @@
 你不知道的HTML
 ======
 文件夹小写
-## 1．开发工具 
+## 一．开发工具 
 
+    推荐 Sublime Text （最主要的优点：轻量、性能高）   
+    插件推荐：
+    Emmet
+    概括地说，Emmet（译者注：前身就是以前大名鼎鼎的Zen Coding，这个如果你没听说和使用过，就悲哀了）是一个可以让你更快更高效地编写HTML和CSS，节省你大量时间的插件。怎么使用？你只需按约定的缩写形式书写而不用写整个代码，然后按“扩展”键，这些缩写就会自动扩展为对应的代码内容。
+    Material Theme
+    主题插件，界面看起来清爽优化。
+    Comic Sans MS
+    这个是英文字体，一个看起来舒服的英文字体，能够让开发在写代码时，心情更加愉悦。比如说，后面这段调皮的代码：console.info("Hello World");
+    https://material-ui.com/ 谷歌UI交互设计风格material   
+    https://github.com/equinusocio/material-theme  material github地址
+    https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
+    https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
+    https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
+    备注：统一编辑器的好处
+      1)作为团队开发，统一的编辑器可以尽量减少团队的沟通的成本。
+      2)好的编辑器能够提高团队的开发效率，无论从写代码的角度，还是审美的角度。
+      
+## 二.前端跨域请求解决方案
 
-推荐 Sublime Text （最主要的优点：轻量、性能高）   
-插件推荐：
-Emmet
-概括地说，Emmet（译者注：前身就是以前大名鼎鼎的Zen Coding，这个如果你没听说和使用过，就悲哀了）是一个可以让你更快更高效地编写HTML和CSS，节省你大量时间的插件。怎么使用？你只需按约定的缩写形式书写而不用写整个代码，然后按“扩展”键，这些缩写就会自动扩展为对应的代码内容。
-
-Material Theme
-主题插件，界面看起来清爽优化。
-
-Comic Sans MS
-这个是英文字体，一个看起来舒服的英文字体，能够让开发在写代码时，心情更加愉悦。比如说，后面这段调皮的代码：
-  console.info("Hello World");
-
-https://material-ui.com/ 谷歌UI交互设计风格material   
-https://github.com/equinusocio/material-theme  material github地址
-
-https://chinagdg.org/2016/02/ttt2-seti-ui/  subime推荐主题
-
-https://www.jianshu.com/p/13fedee165f1 插件主題配置介绍
-
-https://www.jianshu.com/p/13fedee165f1 Sublime插件：主题篇
-
-备注：统一编辑器的好处
-
-  1)作为团队开发，统一的编辑器可以尽量减少团队的沟通的成本。
-  2)好的编辑器能够提高团队的开发效率，无论从写代码的角度，还是审美的角度。
-
-## 2.前端跨域请求解决方案
-
-1. 什么是同源 协议\端口\域名
+1. 什么是同源
+    * 协议
+    * 端口
+    * 域名
 2. 浏览器不同的域名不能访问对应的cookie但是内部的表单没有限制
 3. 同源策略限制的对象（跨域）
     * Cookie 、 LocalStorage 、 IndexDB无法读取
     * Dom 无法获得
     * Ajax 请求不能发送  
-4. 如何设置同源策略（hosts） domain
+4. 如何设置同源策略（domain)
 5. 怎么突破同源策略
 
-### 同源策略
+### 1.同源(origin)策略
 
-先来说说什么是源？  
-源（origin）就是协议、域名和端口号。
+    同源策略是浏览器的一个安全功能，不同源的客户端脚本在没有明确授权的情况下，不能读写对方资源。所以a.com下的js脚本采用ajax读取b.com里面的文件数据是会报错的。
 
-同源策略是浏览器的一个安全功能，不同源的客户端脚本在没有明确授权的情况下，不能读写对方资源。所以a.com下的js脚本采用ajax读取b.com里面的文件数据是会报错的。
+    不受同源策略限制的：
+    1. 页面中的链接，重定向以及表单提交是不会受到同源策略限制的。
+    2. 跨域资源的引入是可以的。但是js不能读写加载的内容。如嵌入到页面中的`<script src="..."></script>，<img>，<link>，<iframe>`等。
 
-同源就是：
-* 协议相同
-* 域名相同
-* 端口号相同
-
-以上url中的源就是：`http://www.company.com:80`  
-若地址里面的协议、域名和端口号均相同则属于同源。  
-以下是相对于 `http://www.a.com/test/index.html` 的同源检测
-
-* `http://www.a.com/dir/page.html` ----成功
-* `http://www.child.a.com/test/index.html` ----失败，域名不同
-* `https://www.a.com/test/index.html` ----失败，协议不同
-* `http://www.a.com:8080/test/index.html` ----失败，端口号不同
-
-不受同源策略限制的：
-1. 页面中的链接，重定向以及表单提交是不会受到同源策略限制的。
-2. 跨域资源的引入是可以的。但是js不能读写加载的内容。如嵌入到页面中的`<script src="..."></script>，<img>，<link>，<iframe>`等。
-
-### 跨域
+### 2.跨域
 
 1、什么是跨域
 受前面所讲的浏览器同源策略的影响，不是同源的脚本不能操作其他源下面的对象。想要操作另一个源下的对象是就需要跨域。
 
 2、跨域的实现形式
-降域 document.domain
-同源策略认为域和子域属于不同的域，如：
-* child1.a.com 与 a.com，
-* child1.a.com 与 child2.a.com，
-* xxx.child1.a.com 与 child1.a.com
-
-两两不同源，可以通过设置 document.damain='a.com'，浏览器就会认为它们都是同一个源。想要实现以上任意两个页面之间的通信，两个页面必须都设置documen.damain='a.com'。
-此方式的特点：
-1. 只能在父域名与子域名之间使用，且将 xxx.child1.a.com域名设置为a.com后，不能再设置成child1.a.com。
-2. 存在安全性问题，当一个站点被攻击后，另一个站点会引起安全漏洞。
-3. 这种方法只适用于 Cookie 和 iframe 窗口。
-
-JSONP跨域  
-JSONP和JSON并没有什么关系！
-
-JSONP的原理：
-
-举例：`a.com/jsonp.html`想得到`b.com/main.js`中的数据在`a.com`的`jsonp.html`里创建一个回调函数xxx，动态添加`<script>`元素，向服务器发送请求，请求地址后面加上查询字符串，通过callback参数指定回调函数的名字。请求地址为`http://b.com/main.js?callback=xxx`。
-在main.js中调用这个回调函数xxx，并且以JSON数据形式作为参数传递，完成回调。我们来看看代码：
-
-html标签
 
 ``` html
   <img src="" alt="">
@@ -100,14 +55,16 @@ html标签
   <script src="jsonp"></script>
   <link rel="stylesheet" href="">
   <style>background</style>
+  <style>border-image</style>
 ```
+
 #### 自己的理解
 
-同源策略：http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
-    同源策略是1995年 Netscape 公司引入浏览器的，目前浏览器都是实行这个策略，
-    同源策略是为了保证用户信息的安全，防止恶意的网站窃取数据的。
-    同源指的是三个相同：协议相同、域名相同、端口号相同
-但是也是因为浏览器同源策略的原因，前端页面不能跨域请求所需资源
+      `同源策略`：http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html 阮一峰
+      同源策略是1995年 Netscape 公司引入浏览器的，目前浏览器都是实行这个策略，
+      同源策略是为了保证用户信息的安全，防止恶意的网站窃取数据的。
+      同源指的是三个相同：协议相同、域名相同、端口号相同
+      但是也是因为浏览器同源策略的原因，前端页面不能跨域请求所需资源
 但是在日常的WEB开发中，需要进行跨域请求:
 *** 
 ##### JSONP
