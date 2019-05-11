@@ -1,16 +1,16 @@
-##  一、认识linux
+####  一、认识linux
 
-#### 1.学习liunx的必要性： 
+##### 1.学习liunx的必要性： 
       （1）. 绝大多数服务器的环境都是在linux下开发的，较少的比如C#，或者公司技术能力不行的
       （2）. 许多发开环境需要在linux下 ---自动化发布、脚本的依赖   
       （3）. 常用的几十个命令需要识记（英文缩写）-> 命令有意义的英文change dir cd  /  ls list
  
-#### 2.linux的官网：https：//www.kernel.org 
+##### 2.linux的官网：https：//www.kernel.org 
  
     操作系统的内核   源代码程语言写的（算法、流程）[底层效率，频繁，提供API][业务层效率要求较低，不频繁]
     其他的是发型版本，加入了很多自己的外壳。
  
-#### 3.linux与windows的区别：
+##### 3.linux与windows的区别：
  
      1.99.9%用于服务器
      2.Unix较为古老，制定些规范
@@ -23,7 +23,7 @@
      8.发展历程可以自己扩展下
      9.linux是归贝尔实验室 AT&T
  
-## 二、安装vmware
+#### 二、安装vmware
  
     下载安装 vmware workstation pro  /  MAC装fusion / 国外网站慢可在360商店下载
     ⽹址：https://www.vmware.com/cn.html  
@@ -41,7 +41,7 @@
        (3).网络的坑
             <1>.虚拟机配置桥接网络，NAT会生成虚拟网络产生许多问题
        
-## 三、安装CentOS 安装盘镜像
+#### 三、安装CentOS 安装盘镜像
 
       CentOS官⽹： https://www.centos.org/
       光盘镜像下载⻚⾯：https://www.centos.org/download/
@@ -60,14 +60,14 @@
             3、找到“Virtualization Technology”，按回⻋键。
             4、选择“Enabled”，按Enter回⻋键。 5、然后保存重启即可
 
-## 四、终端的选择
+#### 四、终端的选择
 
       1. cmder增强行终端    https：//cmder.net  完整版有许多内置eg：git
       2. 微软发布的terminal   https://github.com/microsoft/Terminal  git 看源码
       3. xshell
       4. putty
      
-## 五、终端的使用
+#### 五、终端的使用
        
       1.ssh root@ ip address 139.224.236.30  密码不回显
       2.exit 退出
@@ -129,7 +129,7 @@
        rm 文件  -r
        rm -r dir mac
  
-## 六、终端杂项
+#### 六、终端杂项
      1.
       The authenticity of host '192.168.1.105 (192.168.1.105)' can't be established.
       RSA key fingerprint is SHA256:zsjSGLnHvjOOxFBCs+B9LnJ1CZoLC+hLl2g2Ug03YrI. 
@@ -145,7 +145,7 @@
      6.bin shell 不能被内置的命令(较少shell体积)
      7.数据安全(做好备份)、  环境安全 
     
-## 七、认识目录[目录树结构]
+#### 七、认识目录[目录树结构]
     
             ⽬录 应放置档案内容
             /bin
