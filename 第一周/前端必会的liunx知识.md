@@ -1,31 +1,39 @@
 ##  一、认识linux
- #### 1.学习liunx的必要性： 
+
+#### 1.学习liunx的必要性： 
       （1）. 绝大多数服务器的环境都是在linux下开发的，较少的比如C#，或者公司技术能力不行的
       （2）. 许多发开环境需要在linux下 ---自动化发布、脚本的依赖   
       （3）. 常用的几十个命令需要识记（英文缩写）-> 命令有意义的英文change dir cd  /  ls list
  
- #### 二、linux的官网：https：//www.kernel.org 
- 操作系统的内核   源代码程语言写的（算法、流程）[底层效率，频繁，提供API][业务层效率要求较低，不频繁]
-      其他的是发型版本，加入了很多自己的外壳。
+#### 2.linux的官网：https：//www.kernel.org 
  
- ####linux 与windows的区别：
+    操作系统的内核   源代码程语言写的（算法、流程）[底层效率，频繁，提供API][业务层效率要求较低，不频繁]
+    其他的是发型版本，加入了很多自己的外壳。
+ 
+#### 3.linux 与windows的区别：
+ 
      1.  99.9%用于服务器
      2.  ulinx较为古老，制定些规范
      3. 微软子系统、发布终端拥抱linux
-     
      4.图形界面系统资源的消耗，可以不装图形界面，减少性能损耗
      5.不能把性能的习惯放在加硬件上，是有天花板的，inter最近发布的处理器多核心方向发展，
        提高主频已经不行了，接近物理极限，在提高会遇见神秘的现象量子碎穿现象
-     6.内核的区别：以简为美
-     
+     6.内核的区别：以简为美 
      7.mac的内核是BSD[有版权]
      8.发展历程可以自己扩展下
      9.linux是归贝尔实验室 AT&T
+ 
+## 二、安装vmware
+ 
+    下载安装 vmware workstation pro  /  MAC装fusion / 国外网站慢可在360商店下载
+    ⽹址：https://www.vmware.com/cn.html  
+    ⾸先要 vmware.com 注册⼀个⽤户
+    到下载⻚⾯下载 VMware Workstation Pro 15.0.2 for Win
+    下载⻚⾯链接https://my.vmware.com/cn/web/vmware/iputing/vmware_workstation_pro/15_0
+    把 vmware workstation pro 安装到你的windows电脑上 
+    
      
-     
-     MAC装fusion
-     
-     vmware
+    
                 处理器 核心数量 2 2  
                 1.磁盘大小的坑
                   1.立即占用20G的物理磁盘
