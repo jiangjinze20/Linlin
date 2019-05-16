@@ -48,16 +48,34 @@ https://www.zhangxinxu.com/wordpress/2012/01/introducing-ecmascript-5-1张鑫旭
                     //报错：'caller', 'callee', and 'arguments' properties may
            not be accessed on strict mode functions or the arguments objects for calls to them
                     //报错："caller"，"arguments"，"callee"，不能在严格模式下使用
-     5. 禁用with,使用with会引起语法错误--推荐的替代方案是声明一个临时变量来承载你所需要的属性。
-        with延长作用域链,降低性能
+     5. 
         
 * 简化变量的使用
- 1.
+ 
 ``` javascript
+    1.严格模式下eval 函数内部声明的变量不能再函数外部使用。
     eval("var a = 10");
     a= 15;
     console.log(a);
 ```
-          
-        
+``` javascript
+     2.禁用with,使用with会引起语法错误--推荐的替代方案是声明一个临时变量来承载你所需要的属性。
+       with延长作用域链,降低性能   
+       https://blog.csdn.net/zwkkkk1/article/details/79725934
+       var obj = {
+            a: 1,
+            b: 2,
+            c: 3
+        };
+        // 重复写了3次的“obj”
+            obj.a = 2;
+            obj.b = 3;
+            obj.c = 4;
+            
+           with (obj) {
+                a = 3;
+                b = 4;
+                c = 5;
+            }
+```       
     .新增的保留字：implements，interface，let，package，private，protected，public，static，yield
