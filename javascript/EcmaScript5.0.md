@@ -3,7 +3,9 @@ EcmaScript5.0
 
 
 ##### 进入严格模式之后，行为变更：
+
 `https://www.zhangxinxu.com/wordpress/2012/01/introducing-ecmascript-5-1/ 张鑫旭的日记`
+
     1.全局变量声明时，必须加关键字(var)
         正常模式：a = 10;    console.log(a)    //10
         严格模式：a = 10;    console.log(a)    //a is not defined
