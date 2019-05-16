@@ -121,9 +121,10 @@ https://www.zhangxinxu.com/wordpress/2012/01/introducing-ecmascript-5-1张鑫旭
            not be accessed on strict mode functions or the arguments objects for calls to them
                     //报错："caller"，"arguments"，"callee"，不能在严格模式下使用
 ```
-* "安全的javascript"
+* 安全的javascript
 
 ``` javascript
+    this无法指向全局对象
         正常模式：function fn(){ console.log(this) }        //window
         严格模式：function fn(){ console.log(this) }        //undefined
  ```
