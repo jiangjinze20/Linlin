@@ -330,3 +330,43 @@ yideng.method(fn, 1);
 // 10   2 
 
 ```
+##### 10.写出输出值，并解释为什么
+```
+function test(m) {
+ m = {v:5}//m.v=5
+}
+var m = {k: 30};
+test(m);
+alert(m.v);//undefined
+
+ // 值传递
+  var a = 1;
+  var b = a;
+  b = 3;
+  alert(a);
+  alert(b);
+
+  //按引用地址传递  
+  var a = {qq : 25};
+  var b = a;
+  b.xx = 1;
+  console.log(a);
+  console.log(b);
+
+   b={xx:111}->重写
+  一定要区分 按引用传递 / 重写
+
+  var a = {aa : 66};
+	var b = a;
+	b = {aa:99}
+	//	两次的输出结果
+	{aa: 66}
+	{aa: 99}
+
+	b.aa = 99
+	//	两次的输出结果
+	{aa: 99}
+	{aa: 99}	
+
+
+```
