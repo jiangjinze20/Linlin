@@ -1,7 +1,6 @@
 # 第四部分node相关知识
- 
-<image src="https://github.com/MarsPen/-notes-summary/blob/master/images/node.png" width="550"></image>
 
+<image src="https://github.com/MarsPen/-notes-summary/blob/master/images/node.png" width="550"></image>
 
 ## node基础API系列
 * [node基础网络编程][1]
@@ -15,7 +14,6 @@
 * [node基础API-process进程][9]
 * [node基础API-Error异常][10]
 
-
 ## node高级系列
 * [node高级系列-构建核心模块][11]
 * [node高级系列-npm包管理][12]
@@ -24,7 +22,6 @@
 * [node高级系列-爬虫相关][15] 
 * [node高级系列-数据推送][16] 
 * [node高级系列-前端构建工具][17]
-
 
 [1]: https://github.com/MarsPen/-notes-summary/blob/master/node/http.md
 [2]: https://github.com/MarsPen/-notes-summary/blob/master/node/url.md
